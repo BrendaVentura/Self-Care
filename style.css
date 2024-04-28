@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 8vh;
+}
+
+.logo {
+  width: 100%;
+}
+
+.menu-cabecalho {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+ul li a img {
+  width: 50%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #161616;
+  font-size: 12px;
+  height: 10vh;
+  border-bottom: 1px solid rgba(165, 161, 161, 0.5);
+}
+
+.display-produtos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards {
+  padding: 2rem;
+}
+
+h4 {
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.cards p {
+  padding: 4px;
+}
+
+span {
+  color: #5ca720;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.produto-img {
+  background-color: rgba(92, 167, 32, 0.69);
+  border-radius: 10px;
+}
+
+.produto-img img:hover {
+  opacity: 0.3;
+}
+
+.comprar {
+  margin-top: 10px;
+  background-color: #5ca720;
+  color: #fff5f5;
+  font-weight: 900;
+  border-radius: 10px;
+  width: 110px;
+  height: 35px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  border: none;
+}
+
+.comprar:hover {
+  background-color: rgba(81, 34, 0, 0.74);
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(165, 161, 161, 0.1);
+  border-top: 2px solid rgba(165, 161, 161, 0.3);
+  border-bottom: 1px solid rgba(165, 161, 161, 0.1);
+}
+
+.menu-rodape {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu-rodape li a {
+  text-decoration: none;
+  color: #161616;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 15vw;
+  height: 6vh;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.inscrever {
+  background-color: #5ca720;
+  width: 7vw;
+  height: 6vh;
+  padding: 4px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #fff5f5;
+  font-weight: 900;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 12vh;
+}
+
+.link-redes img {
+  width: 30%;
+  margin: 5px;
+}
+
+.img-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 16vw;
+}
+
+@media (max-width: 430px) {
+  .display-produtos {
+    justify-content: center;
+  }
+
+  .navegacao {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .menu-rodape {
+    width: 80vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 80vw;
+    height: 18vh;
+  }
+
+  #email {
+    width: 80vw;
+    height: 6vh;
+    border-radius: 3px;
+  }
+
+  .inscrever {
+    width: 80vw;
+    height: 6vh;
+    border-radius: 3px;
+  }
+
+  .rodape {
+    width: 100%;
+  }
+
+  .img-rodape {
+    width:40%;
+  }
+}
